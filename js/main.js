@@ -94,8 +94,8 @@ function calc() {
         // PLASTICO
         var ttl__plas = document.getElementById("total__plas");
         var ttl__plastico = parseFloat(ttl__plas.value);
-        // var ttl_plas__s = Separador(ttl__plas.value);
-        // ttl__plas.innerHTML = `$ ${ttl_plas__s}`;
+        var ttl_plas__s = Separador(ttl__plas.value);
+        ttl__plas.value = `${ttl_plas__s}`;
 
         // TOTAL VENTA
         var ttl__venta = document.getElementById("total__venta");
