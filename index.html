@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resumen de ventas </title>
 
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -22,8 +24,8 @@
       <button title="Generar resumen" class="btnCalcular" id="calcular">
         <i class="fa-solid fa-arrow-rotate-right"></i>
       </button>
-      <button title="Descargar PDF" class="btnImprimir" id="imprimir" onclick="imprimir()">
-        <i class="fa-solid fa-print"></i>
+      <button title="Descargar PDF" class="btnImprimir" id="imprimir" onclick="descargar()">
+        <i class="fa-solid fa-download"></i>
       </button>
     </div>
 
@@ -202,13 +204,13 @@
 
     <script src="js/main.js"></script>
     <script>
-      function imprimir() {
+      function descargar() {
           // Obtener el valor del input
           var valorInput = document.getElementById("fecha").value;
           var valorSelect = document.getElementById("cajero").value;
 
           // Actualizar el título de la página con el valor del input
-          document.title = valorSelect + " - ResumenDeVenta_" + valorInput;
+          document.title = valorSelect + "_ResumenDeVenta_" + valorInput;
           window.print();
       }
   </script>
