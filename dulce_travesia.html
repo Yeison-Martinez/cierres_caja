@@ -197,44 +197,71 @@
 
       <section class="disc_venta">
         <article class="art_venta">
-            <p class="texto">Venta en plástico</p>
-            <input type="text" value="0" id="total__plas" />
+        <p class="texto">Efectivo</p>
+        <input type="text" value="0" id="total__plas" class="vlr" />
         </article>
         <article class="art_venta">
-            <p class="texto">Venta en plástico</p>
-            <input type="text" value="0" id="total__plas" />
+        <p class="texto">Debito</p>
+        <input type="text" value="0" id="total__plas" class="vlr" />
         </article>
         <article class="art_venta">
-            <p class="texto">Venta en plástico</p>
-            <input type="text" value="0" id="total__plas" />
+        <p class="texto">Credito</p>
+        <input type="text" value="0" id="total__plas" class="vlr" />
         </article>
-      </section>
-
-      <section class="total__venta">
-        <p class="texto">Total venta</p>
-        <span class="valor" id="total__venta">$</span>
-      </section>
-
-      <section class="descripcion">
-        <h2 class="subtitulo">Total del día</h2>
-
-        <div class="desc__contenedor">
-          <div class="cant__tarjetas">
-            <p class="texto">Cantidad de tarjetas</p>
-            <input type="number" class="cant" value="0" />
-          </div>
-          <div class="cant__venta">
-            <p class="texto">Total de ventas</p>
-            <span class="vlr__cant" id="total__dia">$</span>
-          </div>
-        </div>
+        <article class="art_venta">
+        <p class="texto"><b>Total</b></p>
+        <span class="vlr" id="total__venta">$</span>
+       </article>
       </section>
 
       <section class="observ">
-        <h2 class="subtitulo">Observaciones</h2>
+        <h2 class="subtitulo_observ">Observaciones</h2>
+        
+        <textarea name="" cols="" rows="4"></textarea>
+        </section>
+        
+        <section class="observ">
+        <h2 class="subtitulo_observ">Total del día</h2>
+        
+        <div class="tipo_evento" style="display: flex; width: 100%;">
+         <div style="display: flex; gap: 10px;">
+       <b><p>Evento</p></b>
+        <span class="cuadro">X</span>
+        </div>
+        <div style="display: flex; gap: 10px;">
+        <b><p>Souvenir</p></b>
+        <span class="cuadro"></span>
+        </div>
+        </div>
+        
+        <div class="contenedor_tabla">
+        <div class="">
+        <table class="tabla" border="1px">
+        <thead>
+        <tr>
+        <th>Valor</th>
+        <th>Cantidad</th>
+        <th>Ventas</th>
+        <th>Total</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td><span>$ 8.000</span></td>
+        <td>
+        <input type="number" value="0" class="input cant__bill" id="cant__bill100k" />
+        </td>
+        <td><span class="valor" id="total__bill100k">$</span></td>
+        </tr>
+       </tbody>
+        </div>
+        </section>
 
-        <textarea name="" cols="" rows="5"></textarea>
-      </section>
+        <!-- sfdgsdfgsfdg
+         -->
+
+      
+
     </main>
 
     <script src="js/main.js"></script>
